@@ -215,8 +215,8 @@ PowerBI-SQL-Project/
 │
 ├── Screenshots/
 │   ├── dashboard_overview.png
-│   ├── page2_employers.png
-│   └── page3_geography_insights.png
+│   ├── company_overview.png
+│   └── state_overview.png
 │
 └── Documentation/
     ├── Project_Report.pdf
