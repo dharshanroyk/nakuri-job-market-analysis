@@ -181,7 +181,7 @@ Replace the file names below with your actual screenshots in the `Screenshots/` 
 ### Page 1 - Overview
 
 <img width="1202" height="673" alt="Dashboard_Overview" src="https://github.com/user-attachments/assets/21ff42b7-2dc5-41bf-b2e1-cab4b3473cc3" />
-)
+
 
 ### Page 2 - Employers
 
