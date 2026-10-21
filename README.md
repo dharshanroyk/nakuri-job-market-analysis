@@ -9,12 +9,12 @@ An interactive Power BI dashboard analysing 23,201 Naukri.com job postings for d
 ## Project Information
 
 
-| **Project Title** | Naukri Job Trend Analysis - Indian Tech Jobs 2026 |
-| **Industry** | IT / Data & Analytics Recruitment (Job Market) |
-| **Dataset Name** | `indian_tech_jobs_2026.csv` |
-| **Dataset Source** | Naukri.com job listings (scraped 10 June 2025) |
-| **Database Name** | `Anudip_project` (MySQL) |
-| **Table Names** | `india_tech_jobs_2026` |
+| **Project Title**  Naukri Job Trend Analysis - Indian Tech Jobs 2026 |
+| **Industry**  IT / Data & Analytics Recruitment (Job Market) |
+| **Dataset Name**  `indian_tech_jobs_2026.csv` |
+| **Dataset Source**  Naukri.com job listings (scraped 10 June 2025) |
+| **Database Name**  `Anudip_project` (MySQL) |
+| **Table Names**  `india_tech_jobs_2026` |
 
 ### Problem Statement
 
@@ -180,17 +180,16 @@ Replace the file names below with your actual screenshots in the `Screenshots/` 
 
 ### Page 1 - Overview
 
-![Page 1 Overview](Screenshots/dashboard_overview.png<img width="1202" height="673" alt="Dashboard_Overview" src="https://github.com/user-attachments/assets/21ff42b7-2dc5-41bf-b2e1-cab4b3473cc3" />
+<img width="1202" height="673" alt="Dashboard_Overview" src="https://github.com/user-attachments/assets/21ff42b7-2dc5-41bf-b2e1-cab4b3473cc3" />
 )
 
 ### Page 2 - Employers
 
-![Page 2 Employers](Screenshots/page2_employers.png)<img width="1192" height="643" alt="Company_Overview" src="https://github.com/user-attachments/assets/7b2caaa2-27c7-4221-a2c1-54d8c8e340a1" />
+<img width="1192" height="643" alt="Company_Overview" src="https://github.com/user-attachments/assets/7b2caaa2-27c7-4221-a2c1-54d8c8e340a1" />
 
 
 ### Page 3 - Geography & Insights
-
-![Page 3 Geography and Insights](Screenshots/page3_geography_insights.png)<img width="1212" height="677" alt="State_Overview" src="https://github.com/user-attachments/assets/1caa9c06-78ae-42a7-a243-8d2508c9a0f1" />
+<img width="1212" height="677" alt="State_Overview" src="https://github.com/user-attachments/assets/1caa9c06-78ae-42a7-a243-8d2508c9a0f1" />
 
 
 ---
