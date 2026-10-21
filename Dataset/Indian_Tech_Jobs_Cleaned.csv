@@ -1,0 +1,17 @@
+﻿Indian Tech Jobs - cleaned data (Power BI star schema)
+"Source: indian_tech_jobs_2026.csv (naukri.com), scrape date 10 June 2025 (confirmed by data owner)."
+
+Sheets
+"Fact_JobPosting - one row per de-duplicated posting (21,123). Join keys: EmployerKey, LocationKey, RoleCategory, WorkMode, ExperienceBand, RecencyBucket, PostedDate."
+"Dim_Employer, Dim_Location, Dim_Role, Dim_WorkMode, Dim_Experience, Dim_Recency, Dim_Date, Dim_Skill - dimension tables."
+Bridge_JobSkill - one row per posting-skill pair (many-to-many); join Dim_Skill[SkillKey] and Fact_JobPosting[JobID].
+"DQ_Ledger - data-quality counts, live COUNTIF formulas against Fact_JobPosting."
+
+Key cleaning rules
+Duplicates: rows sharing a job URL removed (same posting scraped under several cities); lowest job_id kept; rows without URL kept.
+"Salary (LPA): re-derived from salary_raw. Undisclosed, Unpaid, open lower bound, invalid, outlier = blank (see SalaryStatus). Monthly pay x12; mixed units handled per side of the range."
+"Experience: re-derived from experience_raw. Non-year text (internship durations, dates) gets no years range. Bands use minimum years required."
+"Recency: PostedDate only where the source gave an exact relative age. ""3+ weeks ago"" is a capped bucket; future start dates have no PostedDate."
+"City: locality suffix removed, Bengaluru->Bangalore etc. Region grouping is analyst-defined. IsLikelyAnonymised is a name heuristic."
+"Skills: split, lower-cased, de-duplicated per posting; skills longer than 60 characters dropped."
+"Dropped source columns: data_source, scraped_at, salary_negotiable (constants); source salary/experience/tier/senior/fresher/skill_domain columns (unreliable); location (multi-valued); job_description and job_url (kept only as HasDescription flag)."
